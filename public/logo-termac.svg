@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="100%" height="100%">
+  <!-- Definitions for styling -->
+  <defs>
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#078BD0" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Left Circular Symbol -->
+  <g transform="translate(18, 18)">
+    <circle cx="72" cy="72" r="72" fill="#078BD0" />
+    
+    <!-- AC Unit Body -->
+    <rect x="28" y="38" width="88" height="42" rx="9" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Top Display/Indicator Inset -->
+    <rect x="38" y="48" width="58" height="6.5" rx="3.25" fill="#FFFFFF"/>
+    <circle cx="102" cy="51.25" r="3.5" fill="#FFFFFF"/>
+    
+    <!-- Lower Grille Slots -->
+    <line x1="38" y1="67" x2="48" y2="67" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="53" y1="67" x2="63" y2="67" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="68" y1="67" x2="78" y2="67" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="83" y1="67" x2="93" y2="67" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="98" y1="67" x2="106" y2="67" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- 4 Airflow Streams -->
+    <!-- Left stream with outward curve -->
+    <path d="M47 90 v11 c0 6 -4 10 -9 10" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Middle left vertical -->
+    <path d="M64 90 v21" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Middle right vertical -->
+    <path d="M80 90 v21" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Right stream with outward curve -->
+    <path d="M97 90 v11 c0 6 4 10 9 10" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Typography: TERMAC -->
+  <!-- Bold classical serif with distinctive serifs matching reference -->
+  <text x="188" y="96" fill="#FFFFFF" font-family="'Cinzel', 'Times New Roman', 'Playfair Display', Georgia, serif" font-size="74" font-weight="800" letter-spacing="1">TERMAC</text>
+
+  <!-- Typography: AR CONDICIONADOS -->
+  <!-- Crisp uppercase geometric sans-serif -->
+  <text x="190" y="136" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="5">AR CONDICIONADOS</text>
+</svg>

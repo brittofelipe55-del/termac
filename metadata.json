@@ -1,0 +1,6 @@
+{
+  "name": "Termac Ar-Condicionados",
+  "description": "Engenharia do Conforto. Instalação, manutenção, infraestrutura e venda de ar-condicionado em Curitiba e região metropolitana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
