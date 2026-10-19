@@ -55,6 +55,35 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Mobile rendering & performance boosts */
+@layer utilities {
+  .section-defer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+  }
+}
+
+/* Reduced blur on mobile devices for 60fps scrolling and rapid first paint */
+@media (max-width: 640px) {
+  .blur-\[140px\],
+  .blur-\[150px\],
+  .blur-\[160px\],
+  .blur-\[170px\],
+  .blur-\[180px\] {
+    filter: blur(45px) !important;
+  }
+  .blur-\[100px\],
+  .blur-\[120px\] {
+    filter: blur(35px) !important;
+  }
+}
+
+/* Hardware accelerated layer */
+.gpu-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 /* Airflow animation effects */
 @keyframes flowDown {
   0% { transform: translateY(-100%); opacity: 0; }

@@ -103,40 +103,33 @@ export const ServicesSection: React.FC = () => {
                 </a>
               </div>
 
-              {/* Graphic Architectural Representation */}
+              {/* Real Photo Architectural Representation */}
               <div className="lg:col-span-5 relative">
-                <div className="aspect-[4/3] rounded-2xl bg-[#05070B] border border-[#078BD0]/30 p-6 flex flex-col justify-between relative overflow-hidden">
-                  <div className="flex items-center justify-between text-xs font-mono text-[#078BD0]">
-                    <span>SYS_INSTALL_SPEC</span>
-                    <span className="text-[#19B8FF]">TMC-ENV-01</span>
-                  </div>
-
-                  {/* Visual blueprint schematic */}
-                  <div className="my-auto py-4 relative flex flex-col items-center justify-center">
-                    <div className="w-4/5 h-14 rounded-lg border-2 border-[#19B8FF]/80 bg-[#078BD0]/20 flex items-center justify-between px-4 relative shadow-[0_0_20px_rgba(25,184,255,0.2)]">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#19B8FF] animate-pulse" />
-                        <span className="text-[11px] font-mono text-white tracking-widest">UNIDADE EVAPORADORA</span>
+                <div className="aspect-[4/3] rounded-2xl bg-[#05070B] border border-[#078BD0]/30 overflow-hidden relative shadow-2xl group">
+                  <img
+                    src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.21__1__1ff94228.jpeg"
+                    alt="Instalação real de ar-condicionado split com display digital pela Termac"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#05070B] via-transparent to-black/30" />
+                  
+                  {/* Floating Technician safety badge with thumbnail */}
+                  <div className="absolute bottom-3 left-3 right-3 bg-[#0A111C]/90 backdrop-blur-md p-3 rounded-xl border border-white/10 flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <img
+                        src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.22_170a168b.jpeg"
+                        alt="Técnico Termac em cobertura com equipamento de segurança"
+                        className="w-9 h-9 rounded-lg object-cover border border-[#078BD0]"
+                      />
+                      <div>
+                        <span className="text-[11px] font-bold text-white block">Instalação com Linha de Vida</span>
+                        <span className="text-[10px] font-mono text-[#078BD0]">Equipe habilitada NR-35</span>
                       </div>
-                      <span className="text-xs font-mono font-bold text-[#19B8FF]">21°C</span>
                     </div>
-
-                    {/* Downward airflow animation lines */}
-                    <div className="flex justify-around w-3/4 py-3">
-                      <div className="w-0.5 h-10 bg-gradient-to-b from-[#19B8FF] to-transparent animate-pulse" />
-                      <div className="w-0.5 h-14 bg-gradient-to-b from-[#078BD0] to-transparent animate-pulse delay-100" />
-                      <div className="w-0.5 h-14 bg-gradient-to-b from-[#078BD0] to-transparent animate-pulse delay-200" />
-                      <div className="w-0.5 h-10 bg-gradient-to-b from-[#19B8FF] to-transparent animate-pulse delay-300" />
-                    </div>
-
-                    <div className="text-[10px] font-mono text-[#A7B4C4] text-center">
-                      Distribuição uniforme de ar climatizado no ambiente
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-between text-[11px] text-[#A7B4C4] pt-2 border-t border-white/10">
-                    <span>Isolamento térmico</span>
-                    <span className="text-white font-mono">100% Hermético</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#078BD0]/20 text-[#19B8FF] border border-[#078BD0]/30">
+                      FOTO REAL
+                    </span>
                   </div>
                 </div>
               </div>
@@ -159,23 +152,36 @@ export const ServicesSection: React.FC = () => {
                   Preparação dos pontos e da estrutura necessários para a instalação do sistema de climatização.
                 </p>
 
-                {/* Technical blueprint block */}
-                <div className="bg-[#05070B] rounded-2xl p-5 border border-white/5 font-mono text-xs text-[#A7B4C4] space-y-2 mb-6">
-                  <div className="text-[#19B8FF] text-[11px] font-bold pb-2 border-b border-white/10 flex justify-between">
-                    <span>ESPECIFICAÇÕES TÉCNICAS</span>
-                    <span>DIAGRAMA TUBULAÇÃO</span>
+                {/* Technical blueprint block with real photo */}
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 mb-6">
+                  <div className="sm:col-span-7 bg-[#05070B] rounded-2xl p-4 border border-white/5 font-mono text-xs text-[#A7B4C4] space-y-2">
+                    <div className="text-[#19B8FF] text-[11px] font-bold pb-1.5 border-b border-white/10 flex justify-between">
+                      <span>ESPECIFICAÇÕES TÉCNICAS</span>
+                      <span>DIAGRAMA</span>
+                    </div>
+                    <div className="flex justify-between py-0.5">
+                      <span>Tubulação:</span>
+                      <span className="text-white">Cobre flangeado</span>
+                    </div>
+                    <div className="flex justify-between py-0.5">
+                      <span>Isolamento:</span>
+                      <span className="text-white">Elastomérico</span>
+                    </div>
+                    <div className="flex justify-between py-0.5">
+                      <span>Drenagem:</span>
+                      <span className="text-white">Por gravidade</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between py-1">
-                    <span>Tubulação frigorígena:</span>
-                    <span className="text-white">Cobre flangeado ou soldado</span>
-                  </div>
-                  <div className="flex justify-between py-1">
-                    <span>Isolamento térmico:</span>
-                    <span className="text-white">Blindado elastomérico</span>
-                  </div>
-                  <div className="flex justify-between py-1">
-                    <span>Linha de drenagem:</span>
-                    <span className="text-white">Caimento por gravidade</span>
+                  <div className="sm:col-span-5 relative rounded-2xl overflow-hidden border border-white/10 aspect-[4/3] sm:aspect-auto">
+                    <img
+                      src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.21_aeb1c215.jpeg"
+                      alt="Infraestrutura real de ar-condicionado em sacada com condensadoras duplas"
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1.5 left-1.5 text-[9px] font-mono bg-black/80 text-[#19B8FF] px-1.5 py-0.5 rounded border border-white/10">
+                      Obra Real
+                    </span>
                   </div>
                 </div>
               </div>
@@ -208,19 +214,32 @@ export const ServicesSection: React.FC = () => {
                   Cuidados periódicos para acompanhar o funcionamento do equipamento e ajudar a prevenir problemas.
                 </p>
 
-                {/* Checklist Inspection */}
-                <div className="bg-[#05070B] rounded-2xl p-5 border border-white/5 space-y-2.5 mb-6 text-xs text-[#A7B4C4]">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
-                    <span>Verificação do rendimento térmico e insuflamento</span>
+                {/* Checklist Inspection with real media preview */}
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 mb-6">
+                  <div className="sm:col-span-7 bg-[#05070B] rounded-2xl p-4 border border-white/5 space-y-2 text-xs text-[#A7B4C4]">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
+                      <span>Rendimento e insuflamento</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
+                      <span>Inspeção elétrica e sensores</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
+                      <span>Higienização de serpentina</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
-                    <span>Inspeção de conexões elétricas e sensores</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#078BD0] shrink-0" />
-                    <span>Checagem do dreno e higienização de serpentina</span>
+                  <div className="sm:col-span-5 relative rounded-2xl overflow-hidden border border-white/10 aspect-[4/3] sm:aspect-auto">
+                    <img
+                      src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.15_cc7d578b.jpeg"
+                      alt="Manutenção real em condensadora externa"
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute bottom-1.5 left-1.5 text-[9px] font-mono bg-black/80 text-[#19B8FF] px-1.5 py-0.5 rounded border border-white/10">
+                      Inspeção Técnica
+                    </span>
                   </div>
                 </div>
               </div>
@@ -481,7 +500,34 @@ export const ServicesSection: React.FC = () => {
                 <div className="flex flex-wrap gap-2 text-xs font-mono text-[#A7B4C4] mb-6">
                   <span className="px-3 py-1 rounded-full bg-[#05070B] border border-white/10">Capacidades: 9.000 a 30.000+ BTUs</span>
                   <span className="px-3 py-1 rounded-full bg-[#05070B] border border-white/10">Tecnologia Inverter</span>
-                  <span className="px-3 py-1 rounded-full bg-[#05070B] border border-white/10">Ciclo Quente/Frio ou Frio</span>
+                  <span className="px-3 py-1 rounded-full bg-[#05070B] border border-white/10">Split Hi-Wall & Cassete 4 Vias</span>
+                </div>
+
+                {/* Real Models Mini Showcase */}
+                <div className="grid grid-cols-2 gap-3 mb-6">
+                  <div className="rounded-xl overflow-hidden border border-white/10 relative group">
+                    <img
+                      src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.29_ca70496b.jpeg"
+                      alt="Modelo Cassete 4 vias embutido"
+                      loading="lazy"
+                      className="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2">
+                      <span className="text-[10px] font-mono text-white font-bold">Cassete 4 Vias Embutido</span>
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl overflow-hidden border border-white/10 relative group">
+                    <img
+                      src="/assets/aistudio/WhatsApp_Image_2026-10-18_at_10.18.34_539cee94.jpeg"
+                      alt="Climatização para grandes espaços e salões"
+                      loading="lazy"
+                      className="w-full h-24 sm:h-28 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2">
+                      <span className="text-[10px] font-mono text-white font-bold">Comercial & Grandes Ambientes</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 

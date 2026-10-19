@@ -8,6 +8,7 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { NarrativeSection } from './components/NarrativeSection';
 import { ServicesSection } from './components/ServicesSection';
+import { RealProjectsGallery } from './components/RealProjectsGallery';
 import { InteractiveSolutionFinder } from './components/InteractiveSolutionFinder';
 import { EducationalFAQ } from './components/EducationalFAQ';
 import { ProductShowcase } from './components/ProductShowcase';
@@ -25,32 +26,53 @@ export default function App() {
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        {/* 1. Hero Section with 3D AC Unit */}
+        {/* 1. Hero Section with 3D AC Unit (Immediate critical paint) */}
         <HeroSection />
 
         {/* 2. Narrative: O Caminho até o Conforto */}
-        <NarrativeSection />
+        <div className="section-defer">
+          <NarrativeSection />
+        </div>
 
         {/* 3. Soluções Completas em Climatização (8 Services) */}
-        <ServicesSection />
+        <div className="section-defer">
+          <ServicesSection />
+        </div>
 
-        {/* 4. Interactive Solution Finder */}
-        <InteractiveSolutionFinder />
+        {/* 4. Galeria de Projetos e Vídeos Reais em Campo */}
+        <div className="section-defer">
+          <RealProjectsGallery />
+        </div>
+
+        {/* 5. Interactive Solution Finder */}
+        <div className="section-defer">
+          <InteractiveSolutionFinder />
+        </div>
 
         {/* 5. Venda de Equipamentos */}
-        <ProductShowcase />
+        <div className="section-defer">
+          <ProductShowcase />
+        </div>
 
         {/* 6. Atendimento Local: Curitiba e Região Metropolitana */}
-        <ServiceAreaSection />
+        <div className="section-defer">
+          <ServiceAreaSection />
+        </div>
 
         {/* 7. Como Funciona o Atendimento (Linha do Tempo) */}
-        <ProcessTimeline />
+        <div className="section-defer">
+          <ProcessTimeline />
+        </div>
 
         {/* 8. Seção Educativa: FAQ Editorial */}
-        <EducationalFAQ />
+        <div className="section-defer">
+          <EducationalFAQ />
+        </div>
 
         {/* 9. CTA Final de Alta Conversão */}
-        <ContactCTA />
+        <div className="section-defer">
+          <ContactCTA />
+        </div>
       </main>
 
       {/* Floating WhatsApp Action Button */}

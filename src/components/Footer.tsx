@@ -63,6 +63,11 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="#galeria" className="hover:text-[#19B8FF] transition-colors font-medium">
+                  Portfólio & Vídeos em Campo
+                </a>
+              </li>
+              <li>
                 <a href="#equipamentos" className="hover:text-white transition-colors">
                   Venda de Equipamentos Novos
                 </a>
